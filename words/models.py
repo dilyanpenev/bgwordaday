@@ -23,6 +23,8 @@ class Word(models.Model):
     transcript = models.CharField(max_length=75)
     definition = models.CharField(max_length=50)
 
+    objects = models.Manager()
+
     class Meta:
         db_table = 'daily_words'
 

@@ -3,10 +3,10 @@ from django.db import models
 # Create your models here.
 
 class Word(models.Model):
-    NOUN = 'N'
-    ADJECTIVE = 'ADJ'
-    VERB = 'V'
-    ADVERB = 'ADV'
+    NOUN = 'n.'
+    ADJECTIVE = 'adj.'
+    VERB = 'v.'
+    ADVERB = 'adv.'
     PARTS_OF_SPEECH_CHOICES = [
         (NOUN, 'Noun'),
         (ADJECTIVE, 'Adjective'),

@@ -5,12 +5,26 @@
     <head>
         <meta charset="utf-8">
         <title> {% block title %} {% endblock %} </title>
-        <link rel="stylesheet", href="{% static "css/style.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'words/style.css' %}">
         <!-- Fonts from Google -->
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
     </head>
     <body>
+        <script src="{% static 'words/sidebar.js' %}"></script>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
         <div id="content">
             {% block content %}
             {% endblock %}

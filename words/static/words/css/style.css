@@ -17,14 +17,27 @@
     left: 0px;
 }
 
-#sidebar a, #sidebar h3{
-    font-family: sans-serif;
+#sidebar h3{
+    color: azure;
+    font-family: 'Marmelad', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+#sidebar a{
+    font-family: 'Marmelad', sans-serif;
+    font-weight: 600;
     color: azure;
     list-style: none;
     padding: 15px 10px;
     border: 1px solid rgba(100, 100, 100, 0.3);
     display: block;
     text-decoration: none;
+}
+
+#sidebar a:hover{
+    color: hotpink;
 }
 
 #sidebar .toggle-btn{
@@ -60,4 +73,26 @@
     font-family: 'Marmelad', sans-serif;
     font-size: 1.5em;
     text-align: center;
+}
+
+.label{
+    font-family: 'Marmelad', sans-serif;
+    font-weight: 600;
+    background-color: rgb(70, 70, 139);
+    padding: 10px 10px;
+    font-size: 0.8em;
+    color: azure;
+}
+
+.email{
+    padding: 5px 15px;
+    margin-bottom: 0.5em;
+}
+
+#share{
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1em;
 }

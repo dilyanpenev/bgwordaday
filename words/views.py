@@ -20,7 +20,12 @@ def todays_word(request):
                     {'word': word})
 
 def word_history(request):
-    words = Word.objects.all().order_by('-date')
+    year = datetime.date.today().year
+    month = datetime.date.today().month
+    words_this_month = Word.objects.filter(date__year=year, date__month=month).order_by('-date')
+    words_earlier = Word.objects.filter(date__year=year).exclude(date__month=month).order_by('-date')
     return render(request,
                     'words/pages/history.html',
-                    {'words': words})
+                    {'words': words_this_month,
+                    'label': words_this_month.first(),
+                    'previous_words': words_earlier})

@@ -63,6 +63,12 @@
     transform: translate(-50%, -50%);
 }
 
+#wordtable{
+    position: absolute;
+    top: 5%;
+    left: 20%;
+}
+
 .bgtext{
     font-family: 'Merriweather', serif;
     font-size: 5em;
@@ -95,4 +101,24 @@
     position: absolute;
     bottom: 0;
     margin-bottom: 1em;
+}
+
+.date{
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+td{
+    
+    font-size: 1.4em;
+    text-align: left;
+}
+
+.right{
+    font-family: 'Marmelad', sans-serif;
+    text-align: right;
+    color: darkslategrey;
+    font-size: 1.2em;
+    padding-left: 125px;
 }

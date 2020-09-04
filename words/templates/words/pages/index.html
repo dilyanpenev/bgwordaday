@@ -3,7 +3,9 @@
 {% block title %} Your New Bulgarian Word {% endblock %}
 
 {% block content %}
-<h1 class="bgtext">{{ word.bgword }}</h1>
-<p class="entext">/{{ word.transcript }}/</p>
-<p class="entext"><span style="font-size: 0.8em;"><em>{{ word.partOfSpeech }}</em></span>, {{ word.definition }}</p>
+<div id=content>
+    <h1 class="bgtext">{{ word.bgword }}</h1>
+    <p class="entext">/{{ word.transcript }}/</p>
+    <p class="entext"><span style="font-size: 0.8em;"><em>{{ word.partOfSpeech }}</em></span>, {{ word.definition }}</p>
+</div>
 {% endblock %}

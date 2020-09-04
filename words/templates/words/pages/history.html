@@ -3,7 +3,20 @@
 {% block title %} Your New Bulgarian Word {% endblock %}
 
 {% block content %}
-{% for word in words %}
-    <p>{{word.bgword}}</p>
-{% endfor %}
+<div id="wordtable">
+    <div style="display: inline-block;">
+        <h3 class="entext" style="margin-bottom: 1em;">{{label.date|date:'F Y'}}</h3>
+        <div style="position: absolute; left: 25%;">
+            <table>
+                {% for word in words %}
+                <tr>
+                    <td class="bgtext" style="font-size: 1.4em; text-align: left;">{{word.bgword}}</td>
+                    <td class="right">/{{word.transcript}}/</td>
+                    <td class="right">{{word.definition}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
 {% endblock %}

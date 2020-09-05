@@ -4,11 +4,24 @@
 
 {% block content %}
 <div id="wordtable">
-    <div style="display: inline-block;">
-        <h3 class="entext" style="margin-bottom: 1em;">{{label.date|date:'F Y'}}</h3>
-        <div style="position: absolute; left: 25%;">
+    <h2 class="entext title">Word Archive</h2>
+    <div style="display: block;">
+        <h3 class="entext">{{label.date|date:'F Y'}}</h3>
+        <div class="table-view">
             <table>
                 {% for word in words %}
+                <tr>
+                    <td class="bgtext" style="font-size: 1.4em; text-align: left;">{{word.bgword}}</td>
+                    <td class="right">/{{word.transcript}}/</td>
+                    <td class="right">{{word.definition}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <h3 class="entext">Earlier this year</h3>
+        <div class="table-view">
+            <table>
+                {% for word in previous_words %}
                 <tr>
                     <td class="bgtext" style="font-size: 1.4em; text-align: left;">{{word.bgword}}</td>
                     <td class="right">/{{word.transcript}}/</td>

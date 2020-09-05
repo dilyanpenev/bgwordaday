@@ -64,9 +64,7 @@
 }
 
 #wordtable{
-    position: absolute;
-    top: 5%;
-    left: 20%;
+    padding: 5% 20%;
 }
 
 .bgtext{
@@ -81,6 +79,11 @@
     text-align: center;
 }
 
+.title{
+    font-size: 2.5em;
+    padding-bottom: 5%;
+}
+
 .label{
     font-family: 'Marmelad', sans-serif;
     font-weight: 600;
@@ -88,11 +91,18 @@
     padding: 10px 10px;
     font-size: 0.8em;
     color: azure;
+    border-radius: 4px;
+}
+
+input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 .email{
     padding: 5px 15px;
     margin-bottom: 0.5em;
+    border-radius: 4px;
 }
 
 #share{
@@ -109,6 +119,10 @@
     text-align: left;
 }
 
+table{
+    width: 100%;
+}
+
 td{
     
     font-size: 1.4em;
@@ -121,4 +135,8 @@ td{
     color: darkslategrey;
     font-size: 1.2em;
     padding-left: 125px;
+}
+
+.table-view{
+    padding: 1.4em 0em;
 }
